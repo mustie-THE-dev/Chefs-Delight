@@ -7,7 +7,7 @@ function Home() {
       display: 'flex',
       justifyContent: 'center',
       alignItems: 'center',
-      height: '50vh',
+      height: '60vh',
       
     }}
     >

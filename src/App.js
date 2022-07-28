@@ -2,12 +2,12 @@ import React from "react";
 import { Routes,Route,} from "react-router-dom";
 import Home from "./components/Home";
 import About from "./components/About";
-import Login from "./components/Login";
-import NavBar from "./components/NavBar/NavBar";
+import Login from "./components/login";
+import NavBar from "./components/NavBar";
 
 function App() {
   return (
-    <div>
+    <div className="container">
       
       <NavBar />
       <Routes>
