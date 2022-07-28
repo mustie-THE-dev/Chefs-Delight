@@ -12,8 +12,8 @@ const Navbar = () => {
   return (
     <>
       <Nav>
-        <NavLink to='/'>
-          <img src={require('../../images/logo.svg')} alt='logo' />
+        <NavLink to='/home' activeStyle>
+          Home
         </NavLink>
         <Bars />
         <NavMenu>
