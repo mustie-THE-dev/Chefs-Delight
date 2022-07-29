@@ -1,0 +1,144 @@
+{
+    "dishes": [
+      {
+        "id": 0,
+        "name": "Pudding Cake",
+        "image": "src/images/puddingcake.jpg",
+        "category": "dessert",
+        "label": "Hot",
+        "price": "4.99",
+        "featured": true,
+        "description": "Delicious pudding layer over yummy chocolate cake layer can be your best dessert"
+      },
+      {
+        "id": 1,
+        "name": "Potato Wedges",
+        "image": "src/images/potatowedges.jpg",
+        "category": "appetizer",
+        "label": "",
+        "price": "1.99",
+        "featured": false,
+        "description": "Deep fried wedges coated with mildly spiced flour batter accompanied with a sweet-tangy tamarind sauce"
+      },
+      {
+        "id": 2,
+        "name": "Fries",
+        "image": "src/images/fries.jpg",
+        "category": "dessert",
+        "label": "New",
+        "price": "1.99",
+        "featured": false,
+        "description": "Sweetness at it's best and very easy to make"
+      },
+      {
+        "id": 3,
+        "name": "Fish fillete",
+        "image": "src/images/fishfillete.jpg",
+        "category": "dessert",
+        "label": "",
+        "price": "2.99",
+        "featured": false,
+        "description": "A delectable, semi-sweet Arabian fish fillete, with Semai crust and custard layer"
+      },
+      {
+        "id": 4,
+        "name": "Beef Pizza",
+        "image": "src/images/beefpizza.jpg",
+        "category": "appetizer",
+        "label": "",
+        "price": "2.99",
+        "featured": false,
+        "description": "Italian style oven baked beef pizza with mozarella cheese and special pizza sauce"
+      },
+      {
+        "id": 5,
+        "name": "Veg Pakora",
+        "image": "src/images/pakora.jpg",
+        "category": "appetizer",
+        "label": "",
+        "price": "2.99",
+        "featured": false,
+        "description": "Crunchy vegetable pakoras, sweet and sour sauce will increase its's taste"
+      },
+      {
+        "id": 6,
+        "name": "Cloud Omlete",
+        "image": "src/images/cloudomlete.jpg",
+        "category": "appetizer",
+        "label": "",
+        "price": "2.99",
+        "featured": false,
+        "description": "If you are bored with your everyday boiled or fried egg, then this one is for you"
+      },
+      {
+        "id": 7,
+        "name": "Chicken Fry",
+        "image": "src/images/fried chicken.jpg",
+        "category": "appetizer",
+        "label": "",
+        "price": "2.99",
+        "featured": false,
+        "description": "Crispy chicken fries served with potato wedges"
+      },
+      {
+        "id": 8,
+        "name": "Chicken Veg Soup",
+        "image": "src/images/chickenvegsoup.jpg",
+        "category": "appetizer",
+        "label": "",
+        "price": "2.99",
+        "featured": false,
+        "description": "Hot and tasty soup is best deal for winter"
+      },
+      {
+        "id": 9,
+        "name": "Dalgona Coffee",
+        "image": "src/images/dalgonacoffee.jpeg",
+        "category": "drink",
+        "label": "",
+        "price": "2.99",
+        "featured": false,
+        "description": "Special Dalgona Coffee, easy to make and best stree reliever"
+      },
+      {
+        "id": 10,
+        "name": "Garlic Potato",
+        "image": "src/images/garlicpotato.jpg",
+        "category": "appetizer",
+        "label": "",
+        "price": "2.99",
+        "featured": false,
+        "description": "Crispy potato with garlic coating"
+      },
+      {
+        "id": 11,
+        "name": "Chicken Pasta",
+        "image": "src/images/chicken pasta.jpg",
+        "category": "appetizer",
+        "label": "",
+        "price": "2.99",
+        "featured": false,
+        "description": "Italian style chicken pan pasta made using special sauce"
+      },
+      {
+        "id": 12,
+        "name": "Jilapi",
+        "image": "src/images/jilapi.jpeg",
+        "category": "appetizer",
+        "label": "",
+        "price": "2.99",
+        "featured": false,
+        "description": "Homemade bakery style perfect shaped jilapi will complete your iftaar"
+      },
+      {
+        "id": 13,
+        "name": "Halwa",
+        "image": "src/images/garlicpotato.jpg",
+        "category": "dessert",
+        "label": "",
+        "price": "2.99",
+        "featured": false,
+        "description": "Sweet and yummy halwa"
+      }
+    ]
+  }

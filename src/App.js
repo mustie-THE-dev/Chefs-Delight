@@ -4,7 +4,7 @@ import Home from "./components/Home";
 import About from "./components/About";
 import Login from "./components/login";
 import NavBar from "./components/NavBar";
-import Recipe from "./components/Recipe";
+import Meals from "./components/Meals";
 
 function App() {
   return (
@@ -12,10 +12,11 @@ function App() {
       
       <NavBar />
       <Routes>
+        <Route  path="/meals" element={<Meals/>}/>
         <Route  path="/about" element={<About/>}/>
         <Route  path="/login" element={<Login/>}/>
         <Route  path="/" element={<Home/>}/>
-        <Route  path="/recipe" element={<Recipe/>}/>
+        
       </Routes>
     
     </div>
