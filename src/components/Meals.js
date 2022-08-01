@@ -1,13 +1,12 @@
-// import useFetch from "./useFetch";
-import Search from "./Search"
-import { useState, useEffect} from "react";
 
-
+import Search from "./Search";
+import { useState, useEffect } from "react";
+import styles from "../"
 
 function Meals() {
   // const [data] = useFetch("http://localhost:3000/dishes");
-  const [meals, setMeals] = useState ([])
-  const [searchData, setSearchData] = useState("")
+  const [meals, setMeals] = useState([]);
+  const [searchData, setSearchData] = useState("");
   console.log(searchData);
 
   useEffect(() => {
@@ -17,67 +16,89 @@ function Meals() {
         setMeals(data);
       });
   }, []);
-    
 
-  const filteredMeals = meals.filter(
-(meal) => {
-  if (searchData === ""){
-  return true}
-  else{
-    return meal.name.toLowerCase().includes(searchData)
-  }
-  
-  
-}
-
-
-  )
+  const filteredMeals = meals.filter((meal) => {
+    if (searchData === "") {
+      return true;
+    } else {
+      return meal.name.toLowerCase().includes(searchData);
+    }
+  });
 
   return (
     <div>
- <div
-   style={{
-    display: "flex",
-    justifyContent: "center",
-    alignItems: "center",
-    height: "30vh",
-    background: "lightgrey",
-  }}
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+          height: "30vh",
+          background: "lightgrey",
+        }}
+      >
+        <Search setSearchData={setSearchData} searchData={searchData} />
+      </div>
 
-    >
+      <div
+        style={{
+          justifyContent: "center",
+          alignItems: "center",
 
-     <Search setSearchData={setSearchData} searchData={searchData}/>
-</div>
-    
-
-    
-    <div
-      style={{
-        display: "flex",
-        justifyContent: "center",
-        alignItems: "center",
-        height: "60vh",
-        background: "lightgrey",
-      }}
-    >
-  
-
-
-      {
-        filteredMeals.map((item) => {
+          background: "lightgrey",
+        }}
+      >
+        {filteredMeals.map((item) => {
           return (
-            <p key={item.id}>
-              {item.name}
-              {item.description}
-              {item.price}
-            </p>
+            <center
+            key={item.id}
+            
+            >
+              <div
+                
+
+
+                style={{
+                  backgroundColor: "white",
+                  margin: "20px",
+                  padding: "3px",
+                  width: "50%",
+                  display: "grid",
+                  //: "25px",
+                  margintop: "50px",
+                 
+                }}
+              >
+                <img
+               // key={item.id}
+                  style={{
+                    height: "45vh",
+                    width: "100%",
+                  }}
+                
+                  src={item.image}
+                  alt="img"
+                />
+
+                <div 
+              
+                  style={{
+                    padding: "5px",
+                  }}  
+                  
+                  >
+                
+                  
+                
+                  <span><h1>{item.name}</h1></span>
+                  <span><p>{item.description}</p></span>
+                  <button><span> Price ${item.price}</span></button>
+                </div>
+              </div>
+            </center>
           );
         })}
+      </div>
     </div>
-    
-
-    </div>
-   
   );
 }
 
