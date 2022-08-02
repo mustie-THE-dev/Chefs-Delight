@@ -1,23 +1,22 @@
-.search{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 30vh;
-    background: aliceblue;
+.search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30vh;
+  background: aliceblue;
 }
 
-.compo{
-    justify-Content: center;
-    align-Items: center;
-    background: aliceblue;
-} 
+.compo {
+  justify-content: center;
+  align-items: center;
+  background: aliceblue;
+}
 
-.card{
-    background-color: white;
-    margin: 20px;
-    padding: 3px;
-    width: 50%;
-    display: grid;
+.card {
+  background-color: white;
+  margin: 20px;
+  padding: 3px;
+  width: 50%;
+  display: grid;
   margin-top: 50px;
-                 
 }

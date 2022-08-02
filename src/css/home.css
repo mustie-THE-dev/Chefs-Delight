@@ -1,37 +1,37 @@
 .myvideo {
-    width: 100%;
-    height: 106;
-    margin-top: 89px;
+  width: 100%;
+  height: 106;
+  margin-top: 89px;
+}
+
+video {
+  width: 100%;
+  height: 106%;
+  object-fit: cover;
+}
+
+.content {
+  width: 100%;
+  height: 105%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  color: #fff;
+  margin-top: 195px;
+}
+
+@media (max-width: 750px) {
+  .myvideo {
+    position: fixed;
   }
-  
-  video {
-    width: 100%;
-    height: 106%;
-     object-fit:cover ;  
-  }
-  
   .content {
-    width: 100%;
-    height: 105%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-color: rgba(0, 0, 0, 0.5);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    text-align: center;
-    color: #fff;
-    margin-top: 195px;
+    margin-top: 2px;
+    height: 26vh;
   }
-
-
-  @media (max-width: 750px) {
-    .myvideo { position: fixed; }
-   .content {
-       margin-top: 2px ;
-       height: 26vh;
 }
-}
-  

@@ -9,7 +9,6 @@ function Search({ searchData, setSearchData }) {
       <input
         style={{
           width: "300px",
-          //fontSize: "30px",
         }}
         placeholder="    search meal..."
         onChange={handleChange}

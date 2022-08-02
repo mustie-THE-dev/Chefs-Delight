@@ -1,0 +1,13 @@
+@media (max-width: 750px) {
+  .cont{
+    display:grid;
+    height: auto;
+    width: auto;
+  }
+  .cont p{
+    margin-left: 100px;
+  }
+  
+}
+
+

@@ -1,9 +1,9 @@
 import Search from "./Search";
 import { useState, useEffect } from "react";
 import "../css/meals.css";
+//import './newItem';
 
 function Meals() {
-  // const [data] = useFetch("http://localhost:3000/dishes");
   const [meals, setMeals] = useState([]);
   const [searchData, setSearchData] = useState("");
   console.log(searchData);
@@ -15,6 +15,7 @@ function Meals() {
         setMeals(data);
       });
   }, []);
+
 
   const filteredMeals = meals.filter((meal) => {
     if (searchData === "") {
@@ -33,42 +34,32 @@ function Meals() {
       <div className="compo">
         {filteredMeals.map((item) => {
           return (
-            <center
-            key={item.id}
-            
-            >
-              <div className="card"
-                
-
-
-                style={{
-                  
-                }}
-              >
+            <center key={item.id}>
+              <div className="card" style={{}}>
                 <img
-               
                   style={{
                     height: "45vh",
                     width: "100%",
                   }}
-                
                   src={item.image}
                   alt="img"
                 />
 
-                <div 
-              
+                <div
                   style={{
                     padding: "5px",
-                  }}  
-                  
-                  >
-                
-                  
-                
-                  <span><h1>{item.name}</h1></span>
-                  <span><p>{item.description}</p></span>
-                  <button><span> Price ${item.price}</span></button>
+                  }}
+                >
+                  <span>
+                    <h1>{item.name}</h1>
+                  </span>
+                  <span>
+                    <p>{item.description}</p>
+                  </span>
+                  <button>
+                    <span> Price ${item.price}</span>
+    
+                  </button>
                 </div>
               </div>
             </center>
@@ -77,6 +68,6 @@ function Meals() {
       </div>
     </div>
   );
-}
+ }
 
 export default Meals;
