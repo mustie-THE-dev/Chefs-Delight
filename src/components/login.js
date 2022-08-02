@@ -1,8 +1,11 @@
-import React from "react";
+import React, { Fragment } from "react";
+import Footer from "./footer";
+
 
 function Login() {
   return (
-    <div
+    <Fragment>
+      <div
       style={{
         display: "flex",
         justifyContent: "center",
@@ -41,6 +44,10 @@ function Login() {
         </form>
       </div>
     </div>
+    <Footer />
+    </Fragment>
+    
+   
   );
 }
 

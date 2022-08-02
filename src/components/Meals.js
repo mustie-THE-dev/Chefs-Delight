@@ -1,7 +1,6 @@
-
 import Search from "./Search";
 import { useState, useEffect } from "react";
-import styles from "../"
+import "../css/meals.css";
 
 function Meals() {
   // const [data] = useFetch("http://localhost:3000/dishes");
@@ -10,7 +9,7 @@ function Meals() {
   console.log(searchData);
 
   useEffect(() => {
-    fetch("http://localhost:3000/dishes")
+    fetch("https://chefs--delight.herokuapp.com/dishes")
       .then((r) => r.json())
       .then((data) => {
         setMeals(data);
@@ -27,49 +26,27 @@ function Meals() {
 
   return (
     <div>
-      <div
-        style={{
-          display: "flex",
-          justifyContent: "center",
-          alignItems: "center",
-          height: "30vh",
-          background: "lightgrey",
-        }}
-      >
+      <div className="search">
         <Search setSearchData={setSearchData} searchData={searchData} />
       </div>
 
-      <div
-        style={{
-          justifyContent: "center",
-          alignItems: "center",
-
-          background: "lightgrey",
-        }}
-      >
+      <div className="compo">
         {filteredMeals.map((item) => {
           return (
             <center
             key={item.id}
             
             >
-              <div
+              <div className="card"
                 
 
 
                 style={{
-                  backgroundColor: "white",
-                  margin: "20px",
-                  padding: "3px",
-                  width: "50%",
-                  display: "grid",
-                  //: "25px",
-                  margintop: "50px",
-                 
+                  
                 }}
               >
                 <img
-               // key={item.id}
+               
                   style={{
                     height: "45vh",
                     width: "100%",

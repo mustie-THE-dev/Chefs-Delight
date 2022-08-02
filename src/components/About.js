@@ -6,17 +6,20 @@ import pic2 from "/home/moringa/Development/code/phase-2/chefs-delight/src/image
 
 function About() {
   return<div>
+    <div>
     <p
   style={{
     display: 'flex',
     justifyContent: 'center',
     alignItems: 'center',
     height: '60vh',
-    fontSize:'80px',
+    fontSize:'25px',
     background:'pink',
     
   }}
-  >Chef Delights is here to help you cook delicious meals with less stress and more joy. We offer recipes and cooking advice for home cooks, by home cooks. Helping create “kitchen wins” is what we are all about. </p>;
+  >Chef Delights is here to help you cook delicious meals with less stress and more joy. We offer recipes and cooking advice for home cooks, by home cooks. Helping create “kitchen wins” is what we are all about. </p>
+    </div>
+  
   <img 
   style={{
     display: 'flex',
@@ -40,8 +43,8 @@ function About() {
    <div>
      <p
       style={{
-       fontcolor:'pink',
-        fontSize:'50px'
+       //marginLeft:'10',
+        fontSize:'45px'
         
         
         

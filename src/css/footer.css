@@ -1,0 +1,15 @@
+.main-footer {
+    color: white;
+    background-color:rgb(50, 48, 48);
+    padding-top: 6em;
+    margin-top: 160px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+  }
+
+
+  @media (max-width: 750px) {
+    .main-footer{ margin-top: 500px; }
+    
+}

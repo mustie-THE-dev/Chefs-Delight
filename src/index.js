@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import "/home/moringa/Development/code/phase-2/chefs-delight/src/navbar.css";
+//import "./";
 import App from "./App";
 import { BrowserRouter as Router } from "react-router-dom";
 
